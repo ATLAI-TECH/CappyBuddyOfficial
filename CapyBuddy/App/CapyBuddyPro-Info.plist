@@ -39,7 +39,7 @@
 	<key>SUEnableInstallerLauncherService</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://capybuddy.app/appcast.xml</string>
+	<string>https://atlai-tech.github.io/CappyBuddyOfficial/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>UUOWHadrZrU3/uYt+Ymqpg2NbaZBCClUHNevEJnT2wo=</string>
 </dict>
