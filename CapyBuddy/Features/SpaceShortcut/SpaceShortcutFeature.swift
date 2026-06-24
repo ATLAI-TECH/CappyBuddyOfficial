@@ -27,6 +27,10 @@ final class SpaceShortcutFeature: Feature {
     private let leaderCapture = LeaderChordCapture()
     private let hud = ChordHUDController()
     private var triggerModeCancellable: AnyCancellable?
+    /// Watches for the app regaining focus so a long-press tap that was
+    /// dormant (Accessibility not yet granted) comes alive the moment the
+    /// user grants it in System Settings and switches back — no relaunch.
+    private var activationObserver: NSObjectProtocol?
 
     /// True iff a leader chord is currently being captured. Used by the
     /// settings view to distinguish "listener running" from "ready to listen".
@@ -58,11 +62,31 @@ final class SpaceShortcutFeature: Feature {
         triggerModeCancellable = bindingStore.$triggerMode.sink { [weak self] mode in
             self?.applyTriggerMode(mode)
         }
+
+        activationObserver = NotificationCenter.default.addObserver(
+            forName: NSApplication.didBecomeActiveNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            MainActor.assumeIsolated {
+                guard let self else { return }
+                // Only the long-press mode has a dormant-until-granted tap;
+                // leader modes use Carbon hotkeys that need no permission.
+                guard self.bindingStore.triggerMode == .longPressSpace,
+                      !self.isTapActive,
+                      PermissionChecker.isAccessibilityGranted(prompt: false) else { return }
+                _ = self.restartTap()
+            }
+        }
     }
 
     func stop() {
         triggerModeCancellable?.cancel()
         triggerModeCancellable = nil
+        if let observer = activationObserver {
+            NotificationCenter.default.removeObserver(observer)
+            activationObserver = nil
+        }
         tearDownAllBackends()
     }
 
@@ -89,8 +113,17 @@ final class SpaceShortcutFeature: Feature {
 
         switch mode {
         case .longPressSpace:
-            if !PermissionChecker.isAccessibilityGranted(prompt: false) {
-                _ = PermissionChecker.isAccessibilityGranted(prompt: true)
+            // IMPORTANT: creating the CGEventTap (inside `eventTap.start()`)
+            // is itself what makes macOS pop the Accessibility prompt when
+            // we're not yet trusted — there's no separate "ask" call to
+            // suppress. So to keep launch prompt-free we must NOT create the
+            // tap until Accessibility is already granted. Until then the
+            // feature stays dormant; the onboarding / Settings permission
+            // card guides the user, and `restartTap()` (Settings "Re-check"
+            // or the next launch) brings the tap up the moment it's granted.
+            guard PermissionChecker.isAccessibilityGranted(prompt: false) else {
+                NSLog("[CapyBuddy] SpaceShortcut: long-press dormant — Accessibility not granted yet (no prompt at launch).")
+                break
             }
             if !eventTap.start() {
                 NSLog("[CapyBuddy] SpaceShortcut: failed to start event tap (Accessibility permission required).")

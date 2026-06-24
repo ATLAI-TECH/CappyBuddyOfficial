@@ -152,6 +152,36 @@ private struct GeneralSettingsView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
 
+            GroupBox("Permissions") {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("CapyBuddy never asks for these at install. Grant a permission only when a tool needs it — or set it up ahead of time here.")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                    PermissionsOverview()
+                }
+                .padding(10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+
+            GroupBox("Welcome") {
+                HStack(alignment: .top, spacing: 12) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Take the welcome tour")
+                            .font(.callout.weight(.semibold))
+                        Text("A quick, animated walkthrough of every tool. Shown once on first launch — replay it any time.")
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 8)
+                    Button("Show Tour…") {
+                        (NSApp.delegate as? AppDelegate)?.showOnboarding()
+                    }
+                }
+                .padding(10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+
             Spacer()
         }
     }

@@ -25,10 +25,11 @@ final class ScreenshotFeature: Feature {
     var isHotkeyActive: Bool { hotkeyTap.isActive }
 
     func start() {
-        if !PermissionChecker.isScreenRecordingGranted() {
-            PermissionChecker.requestScreenRecording()
-        }
-
+        // No permission prompt here. Screen Recording is requested lazily
+        // the first time the user actually triggers a capture (see
+        // `ScreenshotManager.captureRegion()`), so enabling the feature —
+        // or simply launching the app with Screenshot on by default —
+        // never surprises the user with a system dialog.
         hotkeyTap.onTrigger = { [weak self] in
             self?.manager.captureRegion()
         }

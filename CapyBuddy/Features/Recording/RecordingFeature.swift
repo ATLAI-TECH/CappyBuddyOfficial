@@ -13,6 +13,14 @@ final class RecordingFeature: NSObject, Feature {
     let requiresScreenRecording = true
     let requiresAccessibility = true  // for the global start/stop hotkey
 
+    /// Screen Recording + Accessibility come from the flags above; the
+    /// microphone is additionally listed so the permissions overview
+    /// surfaces it. It's only actually requested when the user turns on
+    /// microphone capture, so the rationale copy frames it as optional.
+    var requiredPermissions: [Permission] {
+        [.screenRecording, .accessibility, .microphone]
+    }
+
     var isEnabled: Bool = false
     var showsInMenuBar: Bool = true
     /// Default off so users opt in — recording is destination-of-data heavy
@@ -28,9 +36,11 @@ final class RecordingFeature: NSObject, Feature {
     private var hotkeyObservation: AnyCancellable?
 
     func start() {
-        if !PermissionChecker.isScreenRecordingGranted() {
-            PermissionChecker.requestScreenRecording()
-        }
+        // No permission prompt here. Screen Recording (and microphone) are
+        // requested lazily when the user actually starts a recording — see
+        // `RecordingManager.beginRecording(mode:)`. Enabling the feature
+        // just installs the hotkey and menu; it never pops a system dialog.
+        //
         // Install the global stop/toggle hotkey. Requires Accessibility —
         // if the user hasn't granted it yet the tap will silently fail to
         // start, but the menu and toolbar still work without it.

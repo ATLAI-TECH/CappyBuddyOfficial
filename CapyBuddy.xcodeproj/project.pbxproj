@@ -111,6 +111,7 @@
 		54ED0E882FAE327B00B57825 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000204 /* KeyCombo.swift */; };
 		54ED0E892FAE327B00B57825 /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000205 /* MenuBarManager.swift */; };
 		54ED0E8A2FAE327B00B57825 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000206 /* SettingsWindowController.swift */; };
+		54ED0E990000000000000299 /* OnboardingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000FF1 /* OnboardingWindowController.swift */; };
 		54ED0E8B2FAE327B00B57825 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000207 /* SettingsView.swift */; };
 		54ED0E8C2FAE327B00B57825 /* SpaceShortcutFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000208 /* SpaceShortcutFeature.swift */; };
 		54ED0E8D2FAE327B00B57825 /* EventTapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000209 /* EventTapManager.swift */; };
@@ -237,6 +238,7 @@
 		2C0000000000000000000204 /* KeyCombo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCombo.swift; sourceTree = "<group>"; };
 		2C0000000000000000000205 /* MenuBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManager.swift; sourceTree = "<group>"; };
 		2C0000000000000000000206 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		2C0000000000000000000FF1 /* OnboardingWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWindowController.swift; sourceTree = "<group>"; };
 		2C0000000000000000000207 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2C0000000000000000000208 /* SpaceShortcutFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShortcutFeature.swift; sourceTree = "<group>"; };
 		2C0000000000000000000209 /* EventTapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapManager.swift; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 				1B0000000000000000000101 /* Core */,
 				1B0000000000000000000102 /* MenuBar */,
 				1B0000000000000000000103 /* Settings */,
+				1B00000000000000000001A6 /* Onboarding */,
 				1B0000000000000000000104 /* Features */,
 				4E0000000000000000000402 /* Assets.xcassets */,
 				4E0000000000000000000403 /* Localizable.xcstrings */,
@@ -452,6 +455,14 @@
 				2C0000000000000000000207 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		1B00000000000000000001A6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000FF1 /* OnboardingWindowController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		1B0000000000000000000104 /* Features */ = {
@@ -855,6 +866,7 @@
 				54ED0E882FAE327B00B57825 /* KeyCombo.swift in Sources */,
 				54ED0E892FAE327B00B57825 /* MenuBarManager.swift in Sources */,
 				54ED0E8A2FAE327B00B57825 /* SettingsWindowController.swift in Sources */,
+				54ED0E990000000000000299 /* OnboardingWindowController.swift in Sources */,
 				54ED0E8B2FAE327B00B57825 /* SettingsView.swift in Sources */,
 				54ED0E8C2FAE327B00B57825 /* SpaceShortcutFeature.swift in Sources */,
 				54ED0E8D2FAE327B00B57825 /* EventTapManager.swift in Sources */,

@@ -15,6 +15,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private var menuBarManager: MenuBarManager!
     private var settingsWindowController: SettingsWindowController?
+    private var onboardingWindowController: OnboardingWindowController?
 
     /// Persisted flag — flipped on first successful launch so subsequent
     /// launches don't re-show the welcome window. Public via
@@ -70,12 +71,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         )
 
         // First-launch welcome: if the user has never opened CapyBuddy
-        // before, pop Settings so they can see what's available + grant
-        // permissions before going hunting for the menu-bar icon. Past
-        // launches set the flag — only the very first install hits this
-        // branch. Steady-state launches still go straight to the menu
-        // bar (the surprise pop-up bug from older builds is intentional
-        // here only because it ONLY fires once).
+        // before, show the onboarding window — a calm intro plus an
+        // optional, non-coercive permissions overview. It never requests a
+        // permission on its own; every grant is an explicit click. Past
+        // launches set the flag, so only the very first install hits this
+        // branch; steady-state launches go straight to the menu bar.
         if !UserDefaults.standard.bool(forKey: Self.firstLaunchKey) {
             UserDefaults.standard.set(true, forKey: Self.firstLaunchKey)
             // Defer one runloop tick so the menu-bar item is fully
@@ -83,9 +83,19 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             // status item's tracking can briefly miss the first click on
             // it after the user dismisses the welcome window.
             DispatchQueue.main.async { [weak self] in
-                self?.showSettings()
+                self?.showOnboarding()
             }
         }
+    }
+
+    func showOnboarding() {
+        // Always rebuild so a replay (Settings → Welcome → "Show Tour…")
+        // starts fresh at the welcome step rather than resuming wherever the
+        // user last closed it.
+        onboardingWindowController = OnboardingWindowController(
+            openSettings: { [weak self] featureID in self?.showSettings(selecting: featureID) }
+        )
+        onboardingWindowController?.present()
     }
 
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {

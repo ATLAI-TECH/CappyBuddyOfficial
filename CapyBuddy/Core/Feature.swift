@@ -77,6 +77,18 @@ extension Feature {
     var requiresAccessibility: Bool { false }
     var requiresScreenRecording: Bool { false }
 
+    /// The privacy permissions this feature needs to fully function,
+    /// derived from its `requires…` flags. Drives the onboarding and
+    /// Settings permission overviews ("which feature needs what"). A
+    /// feature can override to add permissions that aren't covered by the
+    /// boolean flags (e.g. Recording's optional microphone).
+    var requiredPermissions: [Permission] {
+        var result: [Permission] = []
+        if requiresScreenRecording { result.append(.screenRecording) }
+        if requiresAccessibility { result.append(.accessibility) }
+        return result
+    }
+
     var iconSystemName: String { "puzzlepiece.extension" }
     var defaultEnabled: Bool { true }
     var summary: String { "" }
