@@ -3,6 +3,15 @@
     <channel>
         <title>CapyBuddy</title>
         <item>
+            <title>2.0.3</title>
+            <pubDate>Thu, 25 Jun 2026 13:56:06 +0100</pubDate>
+            <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>2.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.3/CapyBuddy-2.0.3.zip" length="5340434" type="application/octet-stream" sparkle:edSignature="bhNmyNNBvVBL/uwUy+LELnXMyPVQ3dOULApboqRQm6NbUmYCLh9VEe/XacWq5LCeTDPtc1rm2mS0INBoUV5XAw=="/>
+        </item>
+        <item>
             <title>2.0.2</title>
             <pubDate>Thu, 25 Jun 2026 12:39:29 +0100</pubDate>
             <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
