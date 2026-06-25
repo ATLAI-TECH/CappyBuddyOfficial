@@ -1,10 +1,19 @@
 #!/usr/bin/env bash
-# Build, sign, notarize, staple, zip CapyBuddy, then publish a Sparkle update
-# via GitHub Releases (binary) + GitHub Pages (appcast.xml).
+# Build, sign, notarize, staple, and package CapyBuddy as a DMG, then publish a
+# Sparkle update via GitHub Releases (binary) + GitHub Pages (appcast.xml).
+#
+# Why a DMG and not a zip: a zip round-trips the .app through whatever extractor
+# the user happens to use, and several of them (including Finder's Archive
+# Utility in some cases) flatten the symlinks inside Sparkle.framework. That
+# breaks the code-signature seal — Gatekeeper then rejects the app with
+# "unsealed contents present in the root directory of an embedded framework" /
+# "Apple could not verify ... is free of malware". A DMG is a read-only image
+# that preserves the bundle byte-for-byte, so drag-installing it can't corrupt
+# the framework. (Sparkle handles .dmg enclosures natively.)
 #
 # Distribution model (open source):
-#   * The .zip ships as a GitHub Release asset:
-#       https://github.com/ATLAI-TECH/CapyBuddy/releases/download/vX.Y.Z/CapyBuddy-X.Y.Z.zip
+#   * The .dmg ships as a GitHub Release asset:
+#       https://github.com/ATLAI-TECH/CapyBuddy/releases/download/vX.Y.Z/CapyBuddy-X.Y.Z.dmg
 #   * appcast.xml is written to docs/ and served via GitHub Pages:
 #       https://atlai-tech.github.io/CapyBuddy/appcast.xml
 #     (matches SUFeedURL in CapyBuddyPro-Info.plist)
@@ -43,7 +52,14 @@ NOTARY_PROFILE="CAPYBUDDY_NOTARY"
 APP_NAME="CapyBuddy.app"
 INFO_PLIST="CapyBuddy/App/CapyBuddyPro-Info.plist"
 
-RELEASES_DIR="releases"          # gitignored staging area for signed zips
+# Developer ID Application identity used to sign the DMG itself. The .app is
+# already signed by the export step; the disk image needs its own signature
+# before it can be notarized. Override with SIGN_IDENTITY=... if the cert name
+# ever changes.
+SIGN_IDENTITY="${SIGN_IDENTITY:-Developer ID Application: ATLAI TECHNOLOGY LTD (9A6Q68R555)}"
+VOL_NAME="CapyBuddy"             # mounted volume name for the DMG
+
+RELEASES_DIR="releases"          # gitignored staging area for signed disk images
 DOCS_DIR="docs"                  # GitHub Pages source — appcast.xml lives here
 APPCAST_PATH="$DOCS_DIR/appcast.xml"
 
@@ -53,7 +69,7 @@ RELEASES_URL="https://github.com/$REPO_SLUG/releases"
 SHORT_VERSION=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$INFO_PLIST")
 BUILD_VERSION=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$INFO_PLIST")
 TAG="v${SHORT_VERSION}"
-ZIP_NAME="CapyBuddy-${SHORT_VERSION}.zip"
+DMG_NAME="CapyBuddy-${SHORT_VERSION}.dmg"
 DOWNLOAD_PREFIX="https://github.com/$REPO_SLUG/releases/download/$TAG/"
 
 # --- Resolve Sparkle helper binaries -----------------------------------------
@@ -80,15 +96,15 @@ if [ -f "$APPCAST_PATH" ] && grep -q "sparkle:version=\"${BUILD_VERSION}\"" "$AP
     exit 1
 fi
 
-# Clear the staging dir so it holds ONLY this version's zip. generate_appcast
-# applies --download-url-prefix (tag-specific) to every archive it finds, so a
-# stale zip from a previous version would be handed this tag's URL. Older
-# versions are preserved from the existing docs/appcast.xml instead — Sparkle
-# keeps appcast entries whose archives are no longer in the directory.
+# Clear the staging dir so it holds ONLY this version's disk image.
+# generate_appcast applies --download-url-prefix (tag-specific) to every archive
+# it finds, so a stale image from a previous version would be handed this tag's
+# URL. Older versions are preserved from the existing docs/appcast.xml instead —
+# Sparkle keeps appcast entries whose archives are no longer in the directory.
 rm -rf "$BUILD_DIR" "$RELEASES_DIR"
 mkdir -p "$BUILD_DIR" "$RELEASES_DIR" "$DOCS_DIR"
 
-echo "==> [1/7] Archiving (scheme: $SCHEME, version: $SHORT_VERSION build $BUILD_VERSION)"
+echo "==> [1/8] Archiving (scheme: $SCHEME, version: $SHORT_VERSION build $BUILD_VERSION)"
 xcodebuild -project "$PROJECT" \
     -scheme "$SCHEME" \
     -configuration Release \
@@ -104,7 +120,7 @@ xcodebuild -project "$PROJECT" \
 # automatic signing expects) and let the developer-id export step below re-sign
 # the .app with the Developer ID certificate.
 
-echo "==> [2/7] Exporting Developer ID-signed .app"
+echo "==> [2/8] Exporting Developer ID-signed .app"
 xcodebuild -exportArchive \
     -archivePath "$ARCHIVE_PATH" \
     -exportOptionsPlist "$EXPORT_OPTIONS" \
@@ -116,54 +132,80 @@ if [ ! -d "$APP_PATH" ]; then
     exit 1
 fi
 
-echo "==> [3/7] Submitting to Apple notary service"
+echo "==> [3/8] Submitting .app to Apple notary service"
+# Notarize (and below, staple) the .app itself so the bundle carries its own
+# ticket — that way the installed app passes Gatekeeper even offline, regardless
+# of how it got onto disk. The DMG is notarized separately in step [6/8].
 ZIP_FOR_NOTARY="$BUILD_DIR/notary-submission.zip"
 ditto -c -k --keepParent "$APP_PATH" "$ZIP_FOR_NOTARY"
 xcrun notarytool submit "$ZIP_FOR_NOTARY" \
     --keychain-profile "$NOTARY_PROFILE" \
     --wait
 
-echo "==> [4/7] Stapling notary ticket"
+echo "==> [4/8] Stapling notary ticket to .app"
 xcrun stapler staple "$APP_PATH"
 xcrun stapler validate "$APP_PATH"
 
-echo "==> [5/7] Packaging $ZIP_NAME into $RELEASES_DIR/"
-DIST_ZIP="$RELEASES_DIR/$ZIP_NAME"
-# Sparkle expects a flat zip of the .app at the root, which `ditto -c -k
-# --keepParent` produces.
-ditto -c -k --keepParent "$APP_PATH" "$DIST_ZIP"
+echo "==> [5/8] Building and signing $DMG_NAME"
+# A DMG preserves the .app byte-for-byte (symlinks inside Sparkle.framework
+# included), so drag-installing it can't break the code-signature seal the way a
+# re-extracted zip can. Stage the stapled app plus an /Applications symlink so
+# the mounted image offers the familiar drag-to-install layout.
+DIST_DMG="$RELEASES_DIR/$DMG_NAME"
+DMG_STAGE="$BUILD_DIR/dmg-stage"
+rm -rf "$DMG_STAGE"
+mkdir -p "$DMG_STAGE"
+ditto "$APP_PATH" "$DMG_STAGE/$APP_NAME"   # ditto preserves framework symlinks
+ln -s /Applications "$DMG_STAGE/Applications"
+hdiutil create \
+    -volname "$VOL_NAME" \
+    -srcfolder "$DMG_STAGE" \
+    -fs HFS+ \
+    -format UDZO \
+    -ov \
+    "$DIST_DMG"
+# The disk image needs its own Developer ID signature before notarization.
+codesign --force --sign "$SIGN_IDENTITY" --timestamp "$DIST_DMG"
 
-echo "==> [6/7] Generating signed $APPCAST_PATH"
-# generate_appcast signs each zip in RELEASES_DIR with the keychain private key
-# and rewrites the enclosure URLs to point at the GitHub Release download path
-# for this tag. Older entries already in the appcast are preserved so users a
-# version or two behind can still upgrade.
+echo "==> [6/8] Notarizing + stapling $DMG_NAME"
+xcrun notarytool submit "$DIST_DMG" \
+    --keychain-profile "$NOTARY_PROFILE" \
+    --wait
+xcrun stapler staple "$DIST_DMG"
+xcrun stapler validate "$DIST_DMG"
+spctl -a -t open --context context:primary-signature -vvv "$DIST_DMG" 2>&1 || true
+
+echo "==> [7/8] Generating signed $APPCAST_PATH"
+# generate_appcast signs each archive in RELEASES_DIR (it handles .dmg natively)
+# with the keychain private key and rewrites enclosure URLs to point at the
+# GitHub Release download path for this tag. Older entries already in the
+# appcast are preserved so users a version or two behind can still upgrade.
 "$GENERATE_APPCAST" \
     --link "$RELEASES_URL" \
     --download-url-prefix "$DOWNLOAD_PREFIX" \
     -o "$APPCAST_PATH" \
     "$RELEASES_DIR"
 
-echo "==> [7/7] Publishing GitHub Release $TAG"
+echo "==> [8/8] Publishing GitHub Release $TAG"
 if command -v gh >/dev/null 2>&1; then
     if gh release view "$TAG" >/dev/null 2>&1; then
-        gh release upload "$TAG" "$DIST_ZIP" --clobber
+        gh release upload "$TAG" "$DIST_DMG" --clobber
     else
-        gh release create "$TAG" "$DIST_ZIP" \
+        gh release create "$TAG" "$DIST_DMG" \
             --title "CapyBuddy $SHORT_VERSION" \
             --notes "Automated release. See appcast for details."
     fi
-    echo "    Uploaded $ZIP_NAME to $RELEASES_URL/tag/$TAG"
+    echo "    Uploaded $DMG_NAME to $RELEASES_URL/tag/$TAG"
 else
     echo "    gh CLI not found — upload manually:"
     echo "      1. Create a release tagged '$TAG' at $RELEASES_URL/new"
-    echo "      2. Attach: $DIST_ZIP"
+    echo "      2. Attach: $DIST_DMG"
 fi
 
 echo ""
 echo "Done."
 echo "  Notarized + stapled app: $APP_PATH"
-echo "  Distribution zip:        $DIST_ZIP  (-> Release asset $TAG)"
+echo "  Distribution DMG:        $DIST_DMG  (-> Release asset $TAG)"
 echo "  Appcast:                 $APPCAST_PATH  (-> GitHub Pages)"
 echo ""
 echo "Next:"
