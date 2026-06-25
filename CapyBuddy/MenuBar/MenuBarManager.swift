@@ -30,16 +30,98 @@ final class MenuBarManager: NSObject, NSMenuDelegate {
         let menu = NSMenu()
         menu.delegate = self
         statusItem.menu = menu
+
+        #if CAPYBUDDY_DIRECT
+        // Sparkle's silent daily check posts this when an update appears or
+        // disappears; redraw the green badge on the status item to match.
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(updateAvailabilityChanged),
+            name: .capyBuddyUpdateAvailabilityChanged,
+            object: nil
+        )
+        refreshUpdateBadge()
+        #endif
     }
+
+    #if CAPYBUDDY_DIRECT
+    /// A small green dot pinned to the top-right of the menu-bar icon. Kept as a
+    /// separate subview (rather than compositing into the button image) so the
+    /// base glyph stays a template image that adapts to light/dark menu bars.
+    private lazy var updateBadge: NSView = {
+        let dot = NSView(frame: .zero)
+        dot.wantsLayer = true
+        dot.layer?.backgroundColor = NSColor.systemGreen.cgColor
+        dot.layer?.cornerRadius = 3
+        dot.isHidden = true
+        return dot
+    }()
+
+    @objc private func updateAvailabilityChanged() {
+        refreshUpdateBadge()
+    }
+
+    private func refreshUpdateBadge() {
+        guard let button = statusItem.button else { return }
+        if updateBadge.superview == nil { button.addSubview(updateBadge) }
+        let size: CGFloat = 6
+        let b = button.bounds
+        updateBadge.frame = NSRect(
+            x: b.maxX - size - 2,
+            y: b.maxY - size - 2,
+            width: size,
+            height: size
+        )
+        updateBadge.isHidden = !UpdaterController.shared.updateAvailable
+    }
+    #endif
 
     // MARK: - NSMenuDelegate
 
     func menuNeedsUpdate(_ menu: NSMenu) {
         menu.removeAllItems()
+        #if CAPYBUDDY_DIRECT
+        // When a silent check has found a newer build, surface it as the very
+        // first row (above every feature). Clicking it opens Sparkle's standard
+        // update dialog.
+        if UpdaterController.shared.updateAvailable {
+            menu.addItem(makeUpdateItem())
+            menu.addItem(.separator())
+        }
+        #endif
         for item in Self.buildItems(features: registry.features, target: self) {
             menu.addItem(item)
         }
     }
+
+    #if CAPYBUDDY_DIRECT
+    private func makeUpdateItem() -> NSMenuItem {
+        let title: String
+        if let v = UpdaterController.shared.availableVersion {
+            title = String(localized: "New version \(v) available — Update…")
+        } else {
+            title = String(localized: "New version available — Update…")
+        }
+        let item = NSMenuItem(
+            title: title,
+            action: #selector(installUpdateAction),
+            keyEquivalent: ""
+        )
+        item.target = self
+        // Green download glyph to echo the menu-bar badge.
+        let config = NSImage.SymbolConfiguration(paletteColors: [.systemGreen])
+        let img = NSImage(systemSymbolName: "arrow.down.circle.fill", accessibilityDescription: nil)?
+            .withSymbolConfiguration(config)
+        img?.size = NSSize(width: 16, height: 16)
+        img?.isTemplate = false
+        item.image = img
+        return item
+    }
+
+    @objc private func installUpdateAction() {
+        UpdaterController.shared.checkForUpdates()
+    }
+    #endif
 
     func menuWillOpen(_ menu: NSMenu) {
         // The dropdown was just populated by `menuNeedsUpdate`. Start

@@ -1,3014 +1,2454 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "" : {
-
-    },
-    "·" : {
-
-    },
-    "(disabled)" : {
-
-    },
-    "#RRGGBB" : {
-
-    },
-    "%@ – %@  ·  %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ – %2$@  ·  %3$@"
+  "sourceLanguage": "en",
+  "strings": {
+    "": {},
+    "·": {},
+    "(disabled)": {},
+    "#RRGGBB": {},
+    "%@ – %@  ·  %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ – %2$@  ·  %3$@"
           }
-        }
+        }
       }
     },
-    "%@ → %@   ·   %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ → %2$@   ·   %3$@"
+    "%@ → %@   ·   %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ → %2$@   ·   %3$@"
           }
         }
       }
     },
-    "%@ → %@…" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ → %2$@…"
+    "%@ → %@…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ → %2$@…"
           }
         }
       }
-    },
-    "%lld" : {
-
     },
-    "%lld × %lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld × %2$lld"
+    "%lld": {},
+    "%lld × %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld × %2$lld"
           }
         }
-      }
-    },
-    "%lld fps" : {
-
-    },
-    "%lld item%@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld item%2$@"
+      }
+    },
+    "%lld fps": {},
+    "%lld item%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld item%2$@"
           }
         }
       }
     },
-    "%lld seconds" : {
-
-    },
-    "%lld staged · drop more here" : {
-
-    },
-    "%lld total launches" : {
-
-    },
-    "%lld/%lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld/%2$lld"
+    "%lld seconds": {},
+    "%lld staged · drop more here": {},
+    "%lld total launches": {},
+    "%lld/%lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld/%2$lld"
           }
         }
       }
-    },
-    "%lld%%" : {
-
-    },
-    "• ⎋ Cancel · ↩ Pin · ⌘C Copy · ⌘S Save · ⌘Z Undo" : {
-
-    },
-    "• Drag inside the selection to annotate (only Rectangle in this build)." : {
-
-    },
-    "• Pinned windows: drag to move · double-click / ⎋ to close · right-click for Copy / Save As…" : {
-
-    },
-    "⌃ Space" : {
-
-    },
-    "⌥ Space" : {
-
-    },
-    "☕" : {
-
     },
-    "1 hour" : {
-
-    },
-    "1 second" : {
-
-    },
-    "2 hours" : {
-
-    },
-    "2 seconds" : {
-
-    },
-    "5 seconds" : {
-
-    },
-    "15 minutes" : {
-
-    },
-    "30 minutes" : {
-
-    },
-    "Accessibility permission required" : {
-
-    },
-    "Accessibility permission unlocks more" : {
-
-    },
-    "Activate" : {
-
-    },
-    "Activate when CapyBuddy launches" : {
-
-    },
-    "Add" : {
-
-    },
-    "Add a key → app binding to get started." : {
-
-    },
-    "Add Binding…" : {
-
-    },
-    "Add files to convert" : {
-
-    },
-    "Adding a logo forces high error correction so scanners can recover." : {
-
-    },
-    "Adds a menu-bar status item showing live CPU, memory, and other system stats." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fügt in der Menüleiste eine Anzeige für CPU-, Speicher- und andere Systemwerte in Echtzeit hinzu."
+    "%lld%%": {},
+    "• ⎋ Cancel · ↩ Pin · ⌘C Copy · ⌘S Save · ⌘Z Undo": {},
+    "• Drag inside the selection to annotate (only Rectangle in this build).": {},
+    "• Pinned windows: drag to move · double-click / ⎋ to close · right-click for Copy / Save As…": {},
+    "⌃ Space": {},
+    "⌥ Space": {},
+    "☕": {},
+    "1 hour": {},
+    "1 second": {},
+    "2 hours": {},
+    "2 seconds": {},
+    "5 seconds": {},
+    "15 minutes": {},
+    "30 minutes": {},
+    "Accessibility permission required": {},
+    "Accessibility permission unlocks more": {},
+    "Activate": {},
+    "Activate when CapyBuddy launches": {},
+    "Add": {},
+    "Add a key → app binding to get started.": {},
+    "Add Binding…": {},
+    "Add files to convert": {},
+    "Adding a logo forces high error correction so scanners can recover.": {},
+    "Adds a menu-bar status item showing live CPU, memory, and other system stats.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fügt in der Menüleiste eine Anzeige für CPU-, Speicher- und andere Systemwerte in Echtzeit hinzu."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Añade un elemento en la barra de menús con CPU, memoria y otras estadísticas en vivo."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade un elemento en la barra de menús con CPU, memoria y otras estadísticas en vivo."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajoute un indicateur dans la barre des menus avec CPU, mémoire et autres statistiques en direct."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute un indicateur dans la barre des menus avec CPU, mémoire et autres statistiques en direct."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Добавляет в строке меню индикатор с показателями ЦП, памяти и другими данными в реальном времени."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавляет в строке меню индикатор с показателями ЦП, памяти и другими данными в реальном времени."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在菜单栏添加一个实时显示 CPU、内存等系统状态的小图标。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在菜单栏添加一个实时显示 CPU、内存等系统状态的小图标。"
           }
         }
       }
-    },
-    "After-capture controls" : {
-
-    },
-    "All windows of the chosen app will be captured." : {
-
-    },
-    "Already bought? Enter your license key" : {
-
     },
-    "App" : {
-
-    },
-    "Appearance" : {
-
-    },
-    "Application" : {
-
-    },
-    "Audio" : {
-
-    },
-    "Background" : {
-
-    },
-    "Behavior" : {
-
-    },
-    "Buy" : {
-
-    },
-    "Buy me a coffee" : {
-
-    },
-    "Cancel" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abbrechen"
+    "After-capture controls": {},
+    "All windows of the chosen app will be captured.": {},
+    "Already bought? Enter your license key": {},
+    "App": {},
+    "Appearance": {},
+    "Application": {},
+    "Audio": {},
+    "Background": {},
+    "Behavior": {},
+    "Buy": {},
+    "Buy me a coffee": {},
+    "Cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancelar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Annuler"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Отмена"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отмена"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取消"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
           }
         }
       }
     },
-    "Capture a region of the screen with a global hotkey, then annotate, copy, save, or pin it." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erfassen Sie einen Bildschirmbereich per globalem Shortcut und versehen Sie ihn mit Anmerkungen, kopieren, speichern oder anheften."
+    "Capture a region of the screen with a global hotkey, then annotate, copy, save, or pin it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erfassen Sie einen Bildschirmbereich per globalem Shortcut und versehen Sie ihn mit Anmerkungen, kopieren, speichern oder anheften."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captura una región de la pantalla con un atajo global; luego anótala, cópiala, guárdala o ánclala."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captura una región de la pantalla con un atajo global; luego anótala, cópiala, guárdala o ánclala."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capturez une zone de l'écran avec un raccourci global, puis annotez-la, copiez-la, enregistrez-la ou épinglez-la."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capturez une zone de l'écran avec un raccourci global, puis annotez-la, copiez-la, enregistrez-la ou épinglez-la."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сделайте снимок области экрана глобальным сочетанием клавиш, затем добавьте аннотации, скопируйте, сохраните или прикрепите."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сделайте снимок области экрана глобальным сочетанием клавиш, затем добавьте аннотации, скопируйте, сохраните или прикрепите."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用全局快捷键截取屏幕区域，然后标注、复制、保存或钉到桌面。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用全局快捷键截取屏幕区域，然后标注、复制、保存或钉到桌面。"
           }
         }
       }
-    },
-    "Capture a region of your screen, annotate it, then pin / copy / save." : {
-
-    },
-    "Capture full-screen, a window, or a drag-selected region to MP4/MOV with optional system audio and microphone." : {
-
-    },
-    "Capture images" : {
-
-    },
-    "Capture microphone" : {
-
-    },
-    "Capture Region" : {
-
-    },
-    "Capture system audio" : {
-
-    },
-    "CapyBuddy is built by TermBuddy" : {
-
-    },
-    "CapyBuddy Pro" : {
-
-    },
-    "capybuddy.atlai.co.uk" : {
-
-    },
-    "characters" : {
-
-    },
-    "Check for Updates…" : {
-
     },
-    "Choose a capture mode to continue." : {
-
-    },
-    "Choose a display to record" : {
-
-    },
-    "Choose an application to record" : {
-
-    },
-    "Choose an output folder to extract into." : {
-
-    },
-    "Choose an output folder to save converted files." : {
-
-    },
-    "Choose an output folder to save the archive." : {
-
-    },
-    "Choose App…" : {
-
-    },
-    "Choose where archives and extracted files are saved." : {
-
-    },
-    "Choose where converted images are saved." : {
-
-    },
-    "Choose which tools appear in CapyBuddy's dropdown — and preview the result on the right." : {
-
-    },
-    "Choose…" : {
-
-    },
-    "Chord" : {
-
-    },
-    "Circle" : {
-
-    },
-    "Clear" : {
-
-    },
-    "Clear finished" : {
-
-    },
-    "Clear the flag so the next click on Translate shows the language picker again." : {
-
-    },
-    "Clear Unpinned" : {
-
-    },
-    "Clear unpinned history" : {
-
-    },
-    "Click a window or drag  ·  ESC to cancel" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Klicke ein Fenster oder ziehe  ·  ESC zum Abbrechen"
+    "Capture a region of your screen, annotate it, then pin / copy / save.": {},
+    "Capture full-screen, a window, or a drag-selected region to MP4/MOV with optional system audio and microphone.": {},
+    "Capture images": {},
+    "Capture microphone": {},
+    "Capture Region": {},
+    "Capture system audio": {},
+    "CapyBuddy is built by TermBuddy": {},
+    "CapyBuddy Pro": {},
+    "capybuddy.atlai.co.uk": {},
+    "characters": {},
+    "Check for Updates…": {},
+    "Choose a capture mode to continue.": {},
+    "Choose a display to record": {},
+    "Choose an application to record": {},
+    "Choose an output folder to extract into.": {},
+    "Choose an output folder to save converted files.": {},
+    "Choose an output folder to save the archive.": {},
+    "Choose App…": {},
+    "Choose where archives and extracted files are saved.": {},
+    "Choose where converted images are saved.": {},
+    "Choose which tools appear in CapyBuddy's dropdown — and preview the result on the right.": {},
+    "Choose…": {},
+    "Chord": {},
+    "Circle": {},
+    "Clear": {},
+    "Clear finished": {},
+    "Clear the flag so the next click on Translate shows the language picker again.": {},
+    "Clear Unpinned": {},
+    "Clear unpinned history": {},
+    "Click a window or drag  ·  ESC to cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klicke ein Fenster oder ziehe  ·  ESC zum Abbrechen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Haz clic en una ventana o arrastra  ·  ESC para cancelar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz clic en una ventana o arrastra  ·  ESC para cancelar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cliquez une fenêtre ou faites glisser  ·  ESC pour annuler"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cliquez une fenêtre ou faites glisser  ·  ESC pour annuler"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Кликните окно или перетащите  ·  ESC — отмена"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кликните окно или перетащите  ·  ESC — отмена"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "点击窗口或拖动选区  ·  ESC 取消"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击窗口或拖动选区  ·  ESC 取消"
           }
         }
       }
     },
-    "Clipboard" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zwischenablage"
+    "Clipboard": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwischenablage"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Portapapeles"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portapapeles"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Presse-papiers"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presse-papiers"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Буфер обмена"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Буфер обмена"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "剪贴板"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "剪贴板"
           }
         }
       }
     },
-    "Clipboard History" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zwischenablage-Verlauf"
+    "Clipboard History": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwischenablage-Verlauf"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Historial del Portapapeles"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historial del Portapapeles"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Historique du presse-papiers"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique du presse-papiers"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "История буфера обмена"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "История буфера обмена"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "剪贴板历史"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "剪贴板历史"
           }
         }
       }
-    },
-    "Close" : {
-
     },
-    "Codec" : {
-
-    },
-    "Colors" : {
-
-    },
-    "Compress and extract zip, tar, tar.gz, and gz archives." : {
-
-    },
-    "Compress as" : {
-
-    },
-    "Compress instead" : {
-
-    },
-    "Compressor" : {
-
-    },
-    "Content" : {
-
-    },
-    "Convert %lld file%@ → %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Convert %1$lld file%2$@ → %3$@"
+    "Close": {},
+    "Codec": {},
+    "Colors": {},
+    "Compress and extract zip, tar, tar.gz, and gz archives.": {},
+    "Compress as": {},
+    "Compress instead": {},
+    "Compressor": {},
+    "Content": {},
+    "Convert %lld file%@ → %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Convert %1$lld file%2$@ → %3$@"
           }
         }
       }
-    },
-    "Converted files will appear here." : {
-
-    },
-    "Converting → %@…" : {
-
     },
-    "Copy" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopieren"
+    "Converted files will appear here.": {},
+    "Converting → %@…": {},
+    "Copy": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copier"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Копировать"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копировать"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制"
           }
         }
       }
-    },
-    "Copy Link" : {
-
-    },
-    "Copy recognized text" : {
-
-    },
-    "Copy something to start building history." : {
-
-    },
-    "Copy translated text" : {
-
-    },
-    "Couldn't assemble the edit timeline." : {
-
-    },
-    "Couldn't encode. Try shorter text or lower correction." : {
-
-    },
-    "Couldn't render the translated image." : {
-
-    },
-    "Couldn't save the QR code." : {
-
-    },
-    "Couldn't start the export session." : {
-
-    },
-    "Couldn't write the GIF file." : {
-
     },
-    "Countdown before start" : {
-
-    },
-    "Crop" : {
-
-    },
-    "Dark" : {
-
-    },
-    "Default duration" : {
-
-    },
-    "Default target language:" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Standard-Zielsprache:"
+    "Copy Link": {},
+    "Copy recognized text": {},
+    "Copy something to start building history.": {},
+    "Copy translated text": {},
+    "Couldn't assemble the edit timeline.": {},
+    "Couldn't encode. Try shorter text or lower correction.": {},
+    "Couldn't render the translated image.": {},
+    "Couldn't save the QR code.": {},
+    "Couldn't start the export session.": {},
+    "Couldn't write the GIF file.": {},
+    "Countdown before start": {},
+    "Crop": {},
+    "Dark": {},
+    "Default duration": {},
+    "Default target language:": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard-Zielsprache:"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Idioma destino por defecto:"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma destino por defecto:"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Langue cible par défaut :"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Langue cible par défaut :"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Язык перевода по умолчанию:"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Язык перевода по умолчанию:"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "默认目标语言："
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "默认目标语言："
           }
         }
       }
-    },
-    "Delete" : {
-
-    },
-    "Detected %@ archive — will extract to the same folder." : {
-
-    },
-    "Dismiss" : {
-
-    },
-    "Display" : {
-
-    },
-    "Dots" : {
-
     },
-    "Download" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Herunterladen"
+    "Delete": {},
+    "Detected %@ archive — will extract to the same folder.": {},
+    "Dismiss": {},
+    "Display": {},
+    "Dots": {},
+    "Download": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herunterladen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descargar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Télécharger"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Télécharger"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Скачать"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скачать"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "下载"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载"
           }
         }
       }
     },
-    "Downloading…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lade herunter…"
+    "Downloading…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lade herunter…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descargando…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargando…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Téléchargement…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Téléchargement…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Загрузка…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загрузка…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "下载中…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载中…"
           }
         }
       }
     },
-    "Drag the box — or its corners — on the video above to set the crop region." : {
-
-    },
-    "Drag-and-drop converter between common picture formats (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Drag-and-Drop-Konverter zwischen gängigen Bildformaten (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
+    "Drag the box — or its corners — on the video above to set the crop region.": {},
+    "Drag-and-drop converter between common picture formats (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2).": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag-and-Drop-Konverter zwischen gängigen Bildformaten (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conversor por arrastrar y soltar entre formatos de imagen comunes (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversor por arrastrar y soltar entre formatos de imagen comunes (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Convertisseur par glisser-déposer entre les formats d'image courants (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertisseur par glisser-déposer entre les formats d'image courants (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Конвертер изображений с поддержкой перетаскивания (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Конвертер изображений с поддержкой перетаскивания (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2)."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "拖拽即可在常见图片格式之间转换 (PNG、JPEG、HEIC、TIFF、GIF、AVIF、ICO、BMP、ICNS、JP2)。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拖拽即可在常见图片格式之间转换 (PNG、JPEG、HEIC、TIFF、GIF、AVIF、ICO、BMP、ICNS、JP2)。"
           }
         }
       }
-    },
-    "Drop %@ files here" : {
-
     },
-    "Drop an image to crop, rotate, resize, recolor, watermark, or remove the background." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lege ein Bild ab, um es zuzuschneiden, zu drehen, zu skalieren, einzufärben, mit Wasserzeichen zu versehen oder den Hintergrund zu entfernen."
+    "Drop %@ files here": {},
+    "Drop an image to crop, rotate, resize, recolor, watermark, or remove the background.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lege ein Bild ab, um es zuzuschneiden, zu drehen, zu skalieren, einzufärben, mit Wasserzeichen zu versehen oder den Hintergrund zu entfernen."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Arrastra una imagen para recortar, rotar, redimensionar, retocar, marcar o quitar el fondo."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrastra una imagen para recortar, rotar, redimensionar, retocar, marcar o quitar el fondo."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Déposez une image pour la rogner, la pivoter, la redimensionner, la retoucher, ajouter un filigrane ou supprimer l'arrière-plan."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déposez une image pour la rogner, la pivoter, la redimensionner, la retoucher, ajouter un filigrane ou supprimer l'arrière-plan."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перетащите изображение, чтобы обрезать, повернуть, изменить размер, перекрасить, добавить водяной знак или удалить фон."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перетащите изображение, чтобы обрезать, повернуть, изменить размер, перекрасить, добавить водяной знак или удалить фон."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "拖入图片即可裁剪、旋转、缩放、调色、加水印或抠除背景。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拖入图片即可裁剪、旋转、缩放、调色、加水印或抠除背景。"
           }
         }
       }
-    },
-    "Drop files or an archive here" : {
-
-    },
-    "Drop files to compress, or an archive to extract." : {
-
-    },
-    "Drop logo" : {
-
     },
-    "Drop or click to add a logo. PNG with transparency works best." : {
-
-    },
-    "Element-level snap is off." : {
-
-    },
-    "Element-level snap is on." : {
-
-    },
-    "Enabled" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktiviert"
+    "Drop files or an archive here": {},
+    "Drop files to compress, or an archive to extract.": {},
+    "Drop logo": {},
+    "Drop or click to add a logo. PNG with transparency works best.": {},
+    "Element-level snap is off.": {},
+    "Element-level snap is on.": {},
+    "Enabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktiviert"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activado"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activado"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activé"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activé"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Включено"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включено"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已启用"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已启用"
           }
         }
       }
     },
-    "Error correction" : {
-
-    },
-    "Export" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Exportieren"
+    "Error correction": {},
+    "Export": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportieren"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Exportar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Exporter"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exporter"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Экспорт"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экспорт"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "导出"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出"
           }
         }
       }
-    },
-    "Export configuration is incomplete." : {
-
     },
-    "Export failed" : {
-
-    },
-    "Export Video" : {
-
-    },
-    "Export…" : {
-
-    },
-    "Extract text (OCR)" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text extrahieren (OCR)"
+    "Export configuration is incomplete.": {},
+    "Export failed": {},
+    "Export Video": {},
+    "Export…": {},
+    "Extract text (OCR)": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text extrahieren (OCR)"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Extraer texto (OCR)"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extraer texto (OCR)"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Extraire le texte (OCR)"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extraire le texte (OCR)"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Извлечь текст (OCR)"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Извлечь текст (OCR)"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提取文字 (OCR)"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提取文字 (OCR)"
           }
         }
       }
-    },
-    "Extract Text…" : {
-
     },
-    "Extracted %@" : {
-
-    },
-    "Eyes" : {
-
-    },
-    "Features" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Funktionen"
+    "Extract Text…": {},
+    "Extracted %@": {},
+    "Eyes": {},
+    "Features": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funktionen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Funciones"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funciones"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fonctionnalités"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fonctionnalités"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Возможности"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Возможности"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "功能"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "功能"
           }
         }
       }
-    },
-    "Feedback" : {
-
-    },
-    "File format" : {
-
-    },
-    "Finished jobs will appear here." : {
-
     },
-    "First Translate click will pop up a language picker so you can confirm the target." : {
-
-    },
-    "First-time prompt has fired. New screenshots translate directly to the language above." : {
-
-    },
-    "Fit" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anpassen"
+    "Feedback": {},
+    "File format": {},
+    "Finished jobs will appear here.": {},
+    "First Translate click will pop up a language picker so you can confirm the target.": {},
+    "First-time prompt has fired. New screenshots translate directly to the language above.": {},
+    "Fit": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anpassen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajuster"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajuster"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "По размеру"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По размеру"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "适应"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适应"
           }
         }
       }
-    },
-    "For more information and support, visit" : {
-
-    },
-    "Foreground" : {
-
-    },
-    "Format" : {
-
     },
-    "Found a bug? Want a new tool inside CapyBuddy? Submit it here — your report goes straight to our issue tracker. No GitHub account needed." : {
-
-    },
-    "Frame rate" : {
-
-    },
-    "From" : {
-
-    },
-    "From idle, the hotkey opens region selection. While recording, it stops and saves." : {
-
-    },
-    "General" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allgemein"
+    "For more information and support, visit": {},
+    "Foreground": {},
+    "Format": {},
+    "Found a bug? Want a new tool inside CapyBuddy? Submit it here — your report goes straight to our issue tracker. No GitHub account needed.": {},
+    "Frame rate": {},
+    "From": {},
+    "From idle, the hotkey opens region selection. While recording, it stops and saves.": {},
+    "General": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allgemein"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "General"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Général"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Général"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Основные"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основные"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通用"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通用"
           }
         }
       }
-    },
-    "Generate QR codes — colors, dot/eye shapes, embedded logo, save or copy." : {
-
     },
-    "Get CapyBuddy Pro — %@" : {
-
-    },
-    "Get it" : {
-
-    },
-    "GIFs are exported at up to 480 px, 12 fps." : {
-
-    },
-    "GO" : {
-
-    },
-    "Grant Accessibility permission to snap to UI elements (buttons, text fields, subviews). Falls back to whole-window snap when denied." : {
-
-    },
-    "Higher correction tolerates more damage and bigger logos, but needs more modules." : {
-
-    },
-    "Highlight mouse clicks" : {
-
-    },
-    "History" : {
-
-    },
-    "Hmm, that's not a %@ file." : {
-
-    },
-    "Hold Space" : {
-
-    },
-    "Hold Space and tap a key to instantly launch or focus your most-used apps." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Halten Sie die Leertaste gedrückt und drücken Sie eine Taste, um Ihre häufigsten Apps sofort zu starten oder zu fokussieren."
+    "Generate QR codes — colors, dot/eye shapes, embedded logo, save or copy.": {},
+    "Get CapyBuddy Pro — %@": {},
+    "Get it": {},
+    "GIFs are exported at up to 480 px, 12 fps.": {},
+    "GO": {},
+    "Grant Accessibility permission to snap to UI elements (buttons, text fields, subviews). Falls back to whole-window snap when denied.": {},
+    "Higher correction tolerates more damage and bigger logos, but needs more modules.": {},
+    "Highlight mouse clicks": {},
+    "History": {},
+    "Hmm, that's not a %@ file.": {},
+    "Hold Space": {},
+    "Hold Space and tap a key to instantly launch or focus your most-used apps.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halten Sie die Leertaste gedrückt und drücken Sie eine Taste, um Ihre häufigsten Apps sofort zu starten oder zu fokussieren."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mantén Espacio y pulsa una tecla para abrir o enfocar al instante tus apps más usadas."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantén Espacio y pulsa una tecla para abrir o enfocar al instante tus apps más usadas."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maintenez Espace et tapez une touche pour lancer ou activer instantanément vos applis favorites."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenez Espace et tapez une touche pour lancer ou activer instantanément vos applis favorites."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Удерживайте Пробел и нажмите клавишу, чтобы мгновенно запустить или переключиться на любимое приложение."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удерживайте Пробел и нажмите клавишу, чтобы мгновенно запустить или переключиться на любимое приложение."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "按住空格再敲一个键，瞬间启动或切换最常用的应用。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住空格再敲一个键，瞬间启动或切换最常用的应用。"
           }
         }
       }
     },
-    "Hotkey" : {
-
-    },
-    "Hover a button, text field, or sub-region to snap to its bounds. Click without dragging to capture; drag anywhere to override with a manual rect." : {
-
-    },
-    "How it works" : {
-
-    },
-    "How this works" : {
-
-    },
-    "If CapyBuddy saves you a few minutes a day, consider tipping the developer. One-time purchases — no subscriptions, no accounts." : {
-
-    },
-    "Indefinitely" : {
-
-    },
-    "Keep Awake" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wach halten"
+    "Hotkey": {},
+    "Hover a button, text field, or sub-region to snap to its bounds. Click without dragging to capture; drag anywhere to override with a manual rect.": {},
+    "How it works": {},
+    "How this works": {},
+    "If CapyBuddy saves you a few minutes a day, consider tipping the developer. One-time purchases — no subscriptions, no accounts.": {},
+    "Indefinitely": {},
+    "Keep Awake": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wach halten"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mantener Activo"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantener Activo"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Empêcher la mise en veille"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empêcher la mise en veille"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Не засыпать"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не засыпать"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保持唤醒"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持唤醒"
           }
         }
       }
     },
-    "Keeps a history of recent clipboard items so you can paste anything you copied earlier." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hält einen Verlauf der Zwischenablage bereit, damit Sie zuvor Kopiertes erneut einfügen können."
+    "Keeps a history of recent clipboard items so you can paste anything you copied earlier.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hält einen Verlauf der Zwischenablage bereit, damit Sie zuvor Kopiertes erneut einfügen können."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mantiene un historial reciente del portapapeles para pegar cualquier cosa copiada antes."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantiene un historial reciente del portapapeles para pegar cualquier cosa copiada antes."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conserve l'historique du presse-papiers pour recoller tout ce que vous avez copié récemment."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserve l'historique du presse-papiers pour recoller tout ce que vous avez copié récemment."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сохраняет недавнюю историю буфера обмена, чтобы вставить любое ранее скопированное."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохраняет недавнюю историю буфера обмена, чтобы вставить любое ранее скопированное."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保留最近的剪贴板历史，可随时粘贴之前复制的任意内容。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留最近的剪贴板历史，可随时粘贴之前复制的任意内容。"
           }
         }
       }
-    },
-    "Key" : {
-
     },
-    "Language packs" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sprachpakete"
+    "Key": {},
+    "Language packs": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprachpakete"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paquetes de idioma"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paquetes de idioma"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Packs linguistiques"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Packs linguistiques"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Языковые пакеты"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Языковые пакеты"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "语言包"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语言包"
           }
         }
       }
-    },
-    "Launches" : {
-
-    },
-    "Light" : {
-
-    },
-    "Link" : {
-
     },
-    "Listener not running" : {
-
-    },
-    "Loading prices…" : {
-
-    },
-    "Logo" : {
-
-    },
-    "macOS version, CapyBuddy version, Mac model" : {
-
-    },
-    "Make your terminal go “lobster.” The next-gen AI chat-first IDE — chat from your phone or Mac, let the server do the work." : {
-
-    },
-    "Maximum entries" : {
-
-    },
-    "Menu Bar" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menüleiste"
+    "Launches": {},
+    "Light": {},
+    "Link": {},
+    "Listener not running": {},
+    "Loading prices…": {},
+    "Logo": {},
+    "macOS version, CapyBuddy version, Mac model": {},
+    "Make your terminal go “lobster.” The next-gen AI chat-first IDE — chat from your phone or Mac, let the server do the work.": {},
+    "Maximum entries": {},
+    "Menu Bar": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menüleiste"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Barra de menús"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barra de menús"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Barre des menus"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barre des menus"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Строка меню"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Строка меню"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "菜单栏"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "菜单栏"
           }
         }
       }
-    },
-    "More %@ styles" : {
-
-    },
-    "Mute audio" : {
-
-    },
-    "No apps match." : {
-
     },
-    "No bindings yet" : {
-
-    },
-    "No clipboard items" : {
-
-    },
-    "No items yet  ·  %@" : {
-
-    },
-    "No matches" : {
-
-    },
-    "No text found in the image." : {
-
-    },
-    "Notes" : {
-
-    },
-    "Nothing to translate yet." : {
-
-    },
-    "Nothing to translate." : {
-
-    },
-    "Off" : {
-
-    },
-    "Onboarding" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Einführung"
+    "More %@ styles": {},
+    "Mute audio": {},
+    "No apps match.": {},
+    "No bindings yet": {},
+    "No clipboard items": {},
+    "No items yet  ·  %@": {},
+    "No matches": {},
+    "No text found in the image.": {},
+    "Notes": {},
+    "Nothing to translate yet.": {},
+    "Nothing to translate.": {},
+    "Off": {},
+    "Onboarding": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einführung"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bienvenida"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bienvenida"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bienvenue"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bienvenue"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Знакомство"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Знакомство"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新手引导"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新手引导"
           }
         }
       }
     },
-    "Open" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Öffnen"
+    "Open": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffnen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Открыть"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开"
           }
         }
       }
-    },
-    "Open a video to start editing" : {
-
     },
-    "Open Accessibility Settings" : {
-
-    },
-    "Open Activity Monitor" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktivitätsanzeige öffnen"
+    "Open a video to start editing": {},
+    "Open Accessibility Settings": {},
+    "Open Activity Monitor": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktivitätsanzeige öffnen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir Monitor de Actividad"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Monitor de Actividad"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir le moniteur d'activité"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir le moniteur d'activité"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Открыть Мониторинг системы"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть Мониторинг системы"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开活动监视器"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开活动监视器"
           }
         }
       }
     },
-    "Open Converter…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konverter öffnen…"
+    "Open Converter…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konverter öffnen…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir Conversor…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Conversor…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir le convertisseur…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir le convertisseur…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Открыть конвертер…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть конвертер…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开转换器…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开转换器…"
           }
         }
       }
     },
-    "Open Editor…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Editor öffnen…"
+    "Open Editor…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor öffnen…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir Editor…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Editor…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir l'éditeur…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir l'éditeur…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Открыть редактор…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть редактор…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开编辑器…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开编辑器…"
           }
         }
       }
-    },
-    "Open in Browser" : {
-
     },
-    "Open Picture Converter" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bildkonvertierer öffnen"
+    "Open in Browser": {},
+    "Open Picture Converter": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildkonvertierer öffnen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir Conversor de Imágenes"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Conversor de Imágenes"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir le convertisseur d'image"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir le convertisseur d'image"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Открыть конвертер изображений"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть конвертер изображений"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开图片格式转换"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开图片格式转换"
           }
         }
       }
     },
-    "Open Picture Editor" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bild-Editor öffnen"
+    "Open Picture Editor": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bild-Editor öffnen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir Editor de Imágenes"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Editor de Imágenes"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir l'éditeur d'image"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir l'éditeur d'image"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Открыть редактор изображений"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть редактор изображений"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开图片编辑器"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开图片编辑器"
           }
         }
       }
-    },
-    "Open System Settings" : {
-
-    },
-    "Open the editor after a screen recording finishes" : {
-
     },
-    "Open Video" : {
-
-    },
-    "Open Video…" : {
-
-    },
-    "Opens the website checkout. You’ll get a license key by email." : {
-
-    },
-    "or click to choose" : {
-
-    },
-    "Original · Show Translated" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Original · Übersetzung zeigen"
+    "Open System Settings": {},
+    "Open the editor after a screen recording finishes": {},
+    "Open Video": {},
+    "Open Video…": {},
+    "Opens the website checkout. You’ll get a license key by email.": {},
+    "or click to choose": {},
+    "Original · Show Translated": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original · Übersetzung zeigen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Original · Ver traducción"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original · Ver traducción"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Original · Voir la traduction"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original · Voir la traduction"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Оригинал · Показать перевод"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оригинал · Показать перевод"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "原图 · 显示翻译"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原图 · 显示翻译"
           }
         }
       }
-    },
-    "Permissions" : {
-
     },
-    "Pick a format, drop your files, hit convert." : {
-
-    },
-    "Pick a target language and hit Translate." : {
-
-    },
-    "Pick the language you'd like the screenshot's text to be translated into. You can change this anytime in Settings → Screenshot → Translation." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wählen Sie die Zielsprache für den Text des Screenshots. Jederzeit in Einstellungen → Screenshot → Übersetzung änderbar."
+    "Permissions": {},
+    "Pick a format, drop your files, hit convert.": {},
+    "Pick a target language and hit Translate.": {},
+    "Pick the language you'd like the screenshot's text to be translated into. You can change this anytime in Settings → Screenshot → Translation.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wählen Sie die Zielsprache für den Text des Screenshots. Jederzeit in Einstellungen → Screenshot → Übersetzung änderbar."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elige el idioma al que se traducirá el texto de la captura. Puedes cambiarlo en Ajustes → Captura → Traducción."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige el idioma al que se traducirá el texto de la captura. Puedes cambiarlo en Ajustes → Captura → Traducción."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choisissez la langue cible du texte de la capture. Modifiable à tout moment dans Réglages → Capture → Traduction."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez la langue cible du texte de la capture. Modifiable à tout moment dans Réglages → Capture → Traduction."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Выберите язык, на который будет переведён текст со скриншота. Изменить можно в Настройках → Скриншот → Перевод."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите язык, на который будет переведён текст со скриншота. Изменить можно в Настройках → Скриншот → Перевод."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "选择截图文字要翻译成的目标语言。可随时在 设置 → 截图 → 翻译 中修改。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择截图文字要翻译成的目标语言。可随时在 设置 → 截图 → 翻译 中修改。"
           }
         }
       }
     },
-    "Pick which tools appear in the dropdown. Hidden tools still run in the background." : {
-
-    },
-    "Picture Converter" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bildkonvertierer"
+    "Pick which tools appear in the dropdown. Hidden tools still run in the background.": {},
+    "Picture Converter": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildkonvertierer"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conversor de Imágenes"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversor de Imágenes"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Convertisseur d'image"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convertisseur d'image"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Конвертер изображений"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Конвертер изображений"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "图片格式转换"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "图片格式转换"
           }
         }
       }
     },
-    "Picture Editor" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bild-Editor"
+    "Picture Editor": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bild-Editor"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Editor de Imágenes"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor de Imágenes"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Éditeur d'image"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur d'image"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Редактор изображений"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Редактор изображений"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "图片编辑器"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "图片编辑器"
           }
         }
       }
     },
-    "Pin" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anheften"
+    "Pin": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anheften"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anclar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anclar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Épingler"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Épingler"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Закрепить"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Закрепить"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "钉到桌面"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "钉到桌面"
           }
         }
       }
-    },
-    "Play, trim, crop, mute or re-speed a video clip and export it — handy right after a screen recording." : {
-
-    },
-    "Pre-download the languages you'll need so translation works offline. macOS handles the actual download — first-time use of a missing pack triggers the system download prompt automatically." : {
-
     },
-    "Press a key…" : {
-
-    },
-    "Press the shortcut anywhere to open the clipboard history panel." : {
-
-    },
-    "Press this combination anywhere to start a region capture." : {
-
-    },
-    "Prevents your Mac from sleeping or dimming the display for a chosen duration." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verhindert, dass der Mac in den Ruhezustand wechselt oder das Display abdunkelt."
+    "Play, trim, crop, mute or re-speed a video clip and export it — handy right after a screen recording.": {},
+    "Pre-download the languages you'll need so translation works offline. macOS handles the actual download — first-time use of a missing pack triggers the system download prompt automatically.": {},
+    "Press a key…": {},
+    "Press the shortcut anywhere to open the clipboard history panel.": {},
+    "Press this combination anywhere to start a region capture.": {},
+    "Prevents your Mac from sleeping or dimming the display for a chosen duration.": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verhindert, dass der Mac in den Ruhezustand wechselt oder das Display abdunkelt."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Evita que tu Mac se suspenda o atenúe la pantalla durante el tiempo elegido."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evita que tu Mac se suspenda o atenúe la pantalla durante el tiempo elegido."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Empêche votre Mac de se mettre en veille ou de réduire la luminosité pendant la durée choisie."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empêche votre Mac de se mettre en veille ou de réduire la luminosité pendant la durée choisie."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Не даёт Mac уйти в режим сна или приглушить дисплей в течение выбранного времени."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не даёт Mac уйти в режим сна или приглушить дисплей в течение выбранного времени."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在指定时间内阻止 Mac 进入睡眠或屏幕变暗。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在指定时间内阻止 Mac 进入睡眠或屏幕变暗。"
           }
         }
       }
-    },
-    "Preview selection" : {
-
-    },
-    "Privacy" : {
-
     },
-    "Pro" : {
-
-    },
-    "Pro features are available in the version downloaded from the CapyBuddy website. The App Store edition is free and includes the core tools." : {
-
-    },
-    "Processing %@…" : {
-
-    },
-    "QR / Barcode content" : {
-
-    },
-    "QR Code" : {
-
-    },
-    "Quality" : {
-
-    },
-    "Queued · %@" : {
-
-    },
-    "Queued · → %@" : {
-
-    },
-    "Quick capture" : {
-
-    },
-    "Quit CapyBuddy" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CapyBuddy beenden"
+    "Preview selection": {},
+    "Privacy": {},
+    "Pro": {},
+    "Pro features are available in the version downloaded from the CapyBuddy website. The App Store edition is free and includes the core tools.": {},
+    "Processing %@…": {},
+    "QR / Barcode content": {},
+    "QR Code": {},
+    "Quality": {},
+    "Queued · %@": {},
+    "Queued · → %@": {},
+    "Quick capture": {},
+    "Quit CapyBuddy": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapyBuddy beenden"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salir de CapyBuddy"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salir de CapyBuddy"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quitter CapyBuddy"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter CapyBuddy"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Завершить CapyBuddy"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завершить CapyBuddy"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "退出 CapyBuddy"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出 CapyBuddy"
           }
         }
       }
     },
-    "Re-check" : {
-
-    },
-    "Ready" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bereit"
+    "Re-check": {},
+    "Ready": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereit"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Listo"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listo"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prêt"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prêt"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Готово"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Готово"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已就绪"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已就绪"
           }
         }
       }
-    },
-    "Recent" : {
-
     },
-    "Recent %lld  ·  %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Recent %1$lld  ·  %2$@"
+    "Recent": {},
+    "Recent %lld  ·  %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Recent %1$lld  ·  %2$@"
           }
         }
       }
     },
-    "Recheck" : {
-
-    },
-    "Recognized text" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erkannter Text"
+    "Recheck": {},
+    "Recognized text": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erkannter Text"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Texto reconocido"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Texto reconocido"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Texte reconnu"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Texte reconnu"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Распознанный текст"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Распознанный текст"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "识别到的文字"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "识别到的文字"
           }
         }
       }
     },
-    "Recognizing…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erkenne…"
+    "Recognizing…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erkenne…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reconociendo…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reconociendo…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reconnaissance en cours…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reconnaissance en cours…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Распознавание…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Распознавание…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "识别中…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "识别中…"
           }
         }
       }
     },
-    "Recording %@" : {
-
-    },
-    "Redo" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wiederholen"
+    "Recording %@": {},
+    "Redo": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederholen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rehacer"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rehacer"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rétablir"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rétablir"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вернуть"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вернуть"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重做"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重做"
           }
         }
       }
-    },
-    "Refresh interval" : {
-
     },
-    "Remove" : {
-
-    },
-    "Remove logo" : {
-
-    },
-    "Reset" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zurücksetzen"
+    "Refresh interval": {},
+    "Remove": {},
+    "Remove logo": {},
+    "Reset": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zurücksetzen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restablecer"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réinitialiser"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialiser"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сбросить"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбросить"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置"
           }
         }
       }
     },
-    "Reset first-time prompt" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erst-Dialog zurücksetzen"
+    "Reset first-time prompt": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst-Dialog zurücksetzen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restablecer aviso inicial"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer aviso inicial"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réinitialiser l'invite"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialiser l'invite"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сбросить первое приглашение"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбросить первое приглашение"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置首次提示"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置首次提示"
           }
         }
       }
-    },
-    "Reset Screen Recording Permission…" : {
-
-    },
-    "Reset Size" : {
-
-    },
-    "Reset to ⇧⌘V" : {
-
     },
-    "Reset welcome" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Begrüßung zurücksetzen"
+    "Reset Screen Recording Permission…": {},
+    "Reset Size": {},
+    "Reset to ⇧⌘V": {},
+    "Reset welcome": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begrüßung zurücksetzen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restablecer bienvenida"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer bienvenida"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réinitialiser la bienvenue"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialiser la bienvenue"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сбросить приветствие"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбросить приветствие"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置欢迎页"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置欢迎页"
           }
         }
       }
     },
-    "Restart Listener" : {
-
-    },
-    "Restore Purchase" : {
-
-    },
-    "Retry" : {
-
-    },
-    "Reveal" : {
-
-    },
-    "Reveal Binary in Finder" : {
-
-    },
-    "Reveal exported file in Finder" : {
-
-    },
-    "Reveal file in Finder when finished" : {
-
-    },
-    "Rounded" : {
-
-    },
-    "Save" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Speichern"
+    "Restart Listener": {},
+    "Restore Purchase": {},
+    "Retry": {},
+    "Reveal": {},
+    "Reveal Binary in Finder": {},
+    "Reveal exported file in Finder": {},
+    "Reveal file in Finder when finished": {},
+    "Rounded": {},
+    "Save": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speichern"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guardar"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guardar"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enregistrer"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrer"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сохранить"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
           }
         }
       }
-    },
-    "Save As…" : {
-
-    },
-    "Save Image…" : {
-
     },
-    "Save PNG…" : {
-
-    },
-    "Save to" : {
-
-    },
-    "Scan QR Code" : {
-
-    },
-    "Screen Recording" : {
-
-    },
-    "Screen Recording permission required" : {
-
-    },
-    "Screenshot" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bildschirmfoto"
+    "Save As…": {},
+    "Save Image…": {},
+    "Save PNG…": {},
+    "Save to": {},
+    "Scan QR Code": {},
+    "Screen Recording": {},
+    "Screen Recording permission required": {},
+    "Screenshot": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildschirmfoto"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Captura de Pantalla"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captura de Pantalla"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capture d'écran"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture d'écran"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Скриншот"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скриншот"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "截图"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "截图"
           }
         }
       }
-    },
-    "Screenshot needs Screen Recording permission to capture pixels. Open System Settings, then return here." : {
-
-    },
-    "Search apps…" : {
-
-    },
-    "Search clipboard…" : {
-
-    },
-    "Select an item" : {
-
-    },
-    "Send feedback" : {
-
     },
-    "Set end to playhead" : {
-
-    },
-    "Set Key…" : {
-
-    },
-    "Set start to playhead" : {
-
-    },
-    "Settings…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Einstellungen…"
+    "Screenshot needs Screen Recording permission to capture pixels. Open System Settings, then return here.": {},
+    "Search apps…": {},
+    "Search clipboard…": {},
+    "Select an item": {},
+    "Send feedback": {},
+    "Set end to playhead": {},
+    "Set Key…": {},
+    "Set start to playhead": {},
+    "Settings…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustes…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Réglages…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Настройки…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройки…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设置…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置…"
           }
         }
       }
-    },
-    "Shape" : {
-
-    },
-    "Show All…" : {
-
-    },
-    "Show CPU" : {
-
-    },
-    "Show in Finder" : {
-
-    },
-    "Show Memory" : {
-
-    },
-    "Show mouse cursor" : {
-
     },
-    "Size" : {
-
-    },
-    "Snap-to-element" : {
-
-    },
-    "Space Shortcut" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Leertaste-Shortcut"
+    "Shape": {},
+    "Show All…": {},
+    "Show CPU": {},
+    "Show in Finder": {},
+    "Show Memory": {},
+    "Show mouse cursor": {},
+    "Size": {},
+    "Snap-to-element": {},
+    "Space Shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leertaste-Shortcut"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atajo Espacio"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atajo Espacio"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Raccourci Espace"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raccourci Espace"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сочетание с пробелом"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сочетание с пробелом"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "空格快捷键"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空格快捷键"
           }
         }
       }
-    },
-    "Space Shortcut needs Accessibility permission to detect Space chords. Open System Settings, then return here." : {
-
-    },
-    "Speed" : {
-
-    },
-    "Square" : {
-
-    },
-    "Start / Stop" : {
-
-    },
-    "Starts in %llds" : {
-
-    },
-    "Stroke %@" : {
-
-    },
-    "Submit" : {
-
-    },
-    "Submit another" : {
-
     },
-    "Submitting…" : {
-
-    },
-    "Support" : {
-
-    },
-    "System" : {
-
-    },
-    "System audio and microphone are written as separate audio tracks. Most video editors will see both; QuickTime Player plays the first track only." : {
-
-    },
-    "System Monitor" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Systemmonitor"
+    "Space Shortcut needs Accessibility permission to detect Space chords. Open System Settings, then return here.": {},
+    "Speed": {},
+    "Square": {},
+    "Start / Stop": {},
+    "Starts in %llds": {},
+    "Stroke %@": {},
+    "Submit": {},
+    "Submit another": {},
+    "Submitting…": {},
+    "Support": {},
+    "System": {},
+    "System audio and microphone are written as separate audio tracks. Most video editors will see both; QuickTime Player plays the first track only.": {},
+    "System Monitor": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemmonitor"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Monitor del Sistema"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monitor del Sistema"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Moniteur système"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moniteur système"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Системный монитор"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Системный монитор"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "系统监视器"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统监视器"
           }
         }
       }
-    },
-    "Tap **⌃Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)" : {
-
-    },
-    "Tap **⌥Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)" : {
-
-    },
-    "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears — then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)" : {
-
-    },
-    "TermBuddy" : {
-
-    },
-    "Thank you for the %@! ❤️" : {
-
-    },
-    "Thanks for your support — Pro is unlocked." : {
-
-    },
-    "Thanks! Issue #%lld submitted." : {
-
-    },
-    "The editor does basic, lossy edits: trim the in/out points, crop (free-drag box or a fixed aspect ratio), change playback speed, and mute the audio track. Each export re-encodes the clip." : {
-
-    },
-    "The keyboard event tap isn't active. macOS reports this process as **%@** for Accessibility. If the entry in System Settings refers to a stale build path, remove it and re-add the binary below, then click Restart." : {
-
-    },
-    "The source file has no video track." : {
-
-    },
-    "Theme" : {
-
-    },
-    "This file doesn't contain a video track." : {
-
-    },
-    "This is a CapyBuddy Pro feature — unlock to turn it on." : {
-
-    },
-    "This text is already in %@ — pick a different target language." : {
-
-    },
-    "To" : {
-
     },
-    "Translate" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Übersetzen"
+    "Tap **⌃Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)": {},
+    "Tap **⌥Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)": {},
+    "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears — then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)": {},
+    "TermBuddy": {},
+    "Thank you for the %@! ❤️": {},
+    "Thanks for your support — Pro is unlocked.": {},
+    "Thanks! Issue #%lld submitted.": {},
+    "The editor does basic, lossy edits: trim the in/out points, crop (free-drag box or a fixed aspect ratio), change playback speed, and mute the audio track. Each export re-encodes the clip.": {},
+    "The keyboard event tap isn't active. macOS reports this process as **%@** for Accessibility. If the entry in System Settings refers to a stale build path, remove it and re-add the binary below, then click Restart.": {},
+    "The source file has no video track.": {},
+    "Theme": {},
+    "This file doesn't contain a video track.": {},
+    "This is a CapyBuddy Pro feature — unlock to turn it on.": {},
+    "This text is already in %@ — pick a different target language.": {},
+    "To": {},
+    "Translate": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traducir"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducir"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduire"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduire"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перевести"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевести"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "翻译"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译"
           }
         }
       }
     },
-    "Translate text into…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text übersetzen in…"
+    "Translate text into…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text übersetzen in…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traducir el texto a…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducir el texto a…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduire le texte en…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduire le texte en…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перевести текст на…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевести текст на…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "把文字翻译成…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把文字翻译成…"
           }
         }
       }
     },
-    "Translate text on image" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text im Bild übersetzen"
+    "Translate text on image": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text im Bild übersetzen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traducir texto en la imagen"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducir texto en la imagen"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduire le texte de l'image"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduire le texte de l'image"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перевести текст на изображении"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевести текст на изображении"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "翻译图片中的文字"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译图片中的文字"
           }
         }
       }
     },
-    "Translated · Show Original" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Übersetzt · Original zeigen"
+    "Translated · Show Original": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzt · Original zeigen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traducida · Ver original"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducida · Ver original"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduite · Voir l'original"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduite · Voir l'original"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Переведено · Показать оригинал"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переведено · Показать оригинал"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已翻译 · 显示原图"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已翻译 · 显示原图"
           }
         }
       }
     },
-    "Translating…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Übersetze…"
+    "Translating…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetze…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduciendo…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduciendo…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduction en cours…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduction en cours…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перевод…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевод…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "翻译中…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译中…"
           }
         }
       }
     },
-    "Translation" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Übersetzung"
+    "Translation": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzung"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traducción"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducción"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traduction"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduction"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перевод"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевод"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "翻译"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译"
           }
         }
       }
     },
-    "Translation failed." : {
-
-    },
-    "Translation languages aren't downloaded yet. Open Settings → Screenshot → Translation to download them, then try again." : {
-
-    },
-    "Trigger" : {
-
-    },
-    "Trigger a region capture now." : {
-
-    },
-    "Trigger shortcut" : {
-
-    },
-    "Trim" : {
-
-    },
-    "Try a different search term." : {
-
-    },
-    "Turn individual tools on or off. Hover or click the info icon to learn what each tool does." : {
-
-    },
-    "Type" : {
-
-    },
-    "Type something to encode." : {
-
-    },
-    "Undo" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rückgängig"
+    "Translation failed.": {},
+    "Translation languages aren't downloaded yet. Open Settings → Screenshot → Translation to download them, then try again.": {},
+    "Trigger": {},
+    "Trigger a region capture now.": {},
+    "Trigger shortcut": {},
+    "Trim": {},
+    "Try a different search term.": {},
+    "Turn individual tools on or off. Hover or click the info icon to learn what each tool does.": {},
+    "Type": {},
+    "Type something to encode.": {},
+    "Undo": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rückgängig"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deshacer"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deshacer"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Annuler"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Отменить"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменить"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "撤销"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "撤销"
           }
         }
       }
-    },
-    "Unlock the power features for a one-time %@." : {
-
     },
-    "Unlock with CapyBuddy Pro" : {
-
-    },
-    "Unpin" : {
-
-    },
-    "Unsupported" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nicht unterstützt"
+    "Unlock the power features for a one-time %@.": {},
+    "Unlock with CapyBuddy Pro": {},
+    "Unpin": {},
+    "Unsupported": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht unterstützt"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No compatible"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No compatible"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Non pris en charge"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non pris en charge"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Не поддерживается"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не поддерживается"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不支持"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不支持"
           }
         }
       }
-    },
-    "Use This Folder" : {
-
-    },
-    "Video" : {
-
-    },
-    "Video Editor" : {
-
-    },
-    "Video exported" : {
-
-    },
-    "View on GitHub" : {
-
-    },
-    "What do you want to record?" : {
-
     },
-    "When off, only text is saved to history." : {
-
-    },
-    "When on, a finished recording opens here so you can trim or crop it before sharing." : {
-
-    },
-    "Will export %@ at %@." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Will export %1$@ at %2$@."
+    "Use This Folder": {},
+    "Video": {},
+    "Video Editor": {},
+    "Video exported": {},
+    "View on GitHub": {},
+    "What do you want to record?": {},
+    "When off, only text is saved to history.": {},
+    "When on, a finished recording opens here so you can trim or crop it before sharing.": {},
+    "Will export %@ at %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Will export %1$@ at %2$@."
           }
         }
       }
-    },
-    "Will export an animated GIF." : {
-
-    },
-    "Will save as %@" : {
-
-    },
-    "Wipes the TCC entry for this build. Re-launch and re-grant on the next record." : {
-
     },
-    "Without it, snap-to-element falls back to whole-window snap. The global trigger shortcut still works without it." : {
-
-    },
-    "Workflow" : {
-
-    },
-    "Working…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Arbeite…"
+    "Will export an animated GIF.": {},
+    "Will save as %@": {},
+    "Wipes the TCC entry for this build. Re-launch and re-grant on the next record.": {},
+    "Without it, snap-to-element falls back to whole-window snap. The global trigger shortcut still works without it.": {},
+    "Workflow": {},
+    "Working…": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeite…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trabajando…"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trabajando…"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traitement…"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traitement…"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Обработка…"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обработка…"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "处理中…"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "处理中…"
           }
         }
       }
-    },
-    "XXXX-XXXX-XXXX-XXXX" : {
-
-    },
-    "you@example.com" : {
-
-    },
-    "Your friendly Mac companion." : {
-
     },
-    "Your report has been posted to GitHub." : {
-
+    "XXXX-XXXX-XXXX-XXXX": {},
+    "you@example.com": {},
+    "Your friendly Mac companion.": {},
+    "Your report has been posted to GitHub.": {},
+    "Your report is sent to our Cloudflare Worker, which creates a public issue at github.com/ATLAI-TECH/CapyBuddyTools. Don't include private info you wouldn't want public.": {},
+    "New version %@ available — Update…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New version %@ available — Update…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有新版本 %@ 可用 — 点击更新"
+          }
+        }
+      }
     },
-    "Your report is sent to our Cloudflare Worker, which creates a public issue at github.com/ATLAI-TECH/CapyBuddyTools. Don't include private info you wouldn't want public." : {
-
+    "New version available — Update…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New version available — Update…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有新版本可用 — 点击更新"
+          }
+        }
+      }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
