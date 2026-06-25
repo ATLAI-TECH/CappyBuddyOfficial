@@ -426,25 +426,29 @@ enum VideoEditExporter {
             let orientedSize = CGSize(width: abs(oriented.width), height: abs(oriented.height))
             let box = pixelCropBox(crop, in: orientedSize)
 
-            var vcConfig = AVVideoComposition.Configuration()
-            vcConfig.renderSize = box.size
+            // Classic mutable API (macOS 10.9+) rather than the value-type
+            // AVVideoComposition.Configuration builder, which is macOS 26 only —
+            // keeping this on the established API lets the app deploy back to
+            // macOS 15. Semantics are identical.
+            let mutableVC = AVMutableVideoComposition()
+            mutableVC.renderSize = box.size
             let fps = nominalFrameRate > 0 ? nominalFrameRate : 30
-            vcConfig.frameDuration = CMTime(value: 1, timescale: CMTimeScale(max(1, fps.rounded())))
+            mutableVC.frameDuration = CMTime(value: 1, timescale: CMTimeScale(max(1, fps.rounded())))
 
-            var instructionConfig = AVVideoCompositionInstruction.Configuration()
-            instructionConfig.timeRange = CMTimeRange(start: .zero, duration: composition.duration)
+            let instruction = AVMutableVideoCompositionInstruction()
+            instruction.timeRange = CMTimeRange(start: .zero, duration: composition.duration)
 
-            var layerConfig = AVVideoCompositionLayerInstruction.Configuration(assetTrack: compVideo)
+            let layerInstruction = AVMutableVideoCompositionLayerInstruction(assetTrack: compVideo)
             // Orient the raw buffer (preferredTransform), then shift the
             // crop's bottom-left corner to (0, 0) so it fills the render box.
             let transform = preferredTransform.concatenating(
                 CGAffineTransform(translationX: -box.bottomLeft.x, y: -box.bottomLeft.y)
             )
-            layerConfig.setTransform(transform, at: .zero)
+            layerInstruction.setTransform(transform, at: .zero)
 
-            instructionConfig.layerInstructions = [AVVideoCompositionLayerInstruction(configuration: layerConfig)]
-            vcConfig.instructions = [AVVideoCompositionInstruction(configuration: instructionConfig)]
-            videoComposition = AVVideoComposition(configuration: vcConfig)
+            instruction.layerInstructions = [layerInstruction]
+            mutableVC.instructions = [instruction]
+            videoComposition = mutableVC
         }
 
         // 4. Export with live progress.
