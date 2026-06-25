@@ -58,6 +58,7 @@ INFO_PLIST="CapyBuddy/App/CapyBuddyPro-Info.plist"
 # ever changes.
 SIGN_IDENTITY="${SIGN_IDENTITY:-Developer ID Application: ATLAI TECHNOLOGY LTD (9A6Q68R555)}"
 VOL_NAME="CapyBuddy"             # mounted volume name for the DMG
+DMG_BACKGROUND="scripts/dmg-assets/dmg-background.tiff"   # HiDPI tiff, see make-background.swift
 
 RELEASES_DIR="releases"          # gitignored staging area for signed disk images
 DOCS_DIR="docs"                  # GitHub Pages source — appcast.xml lives here
@@ -85,6 +86,18 @@ if [ -z "${GENERATE_APPCAST:-}" ] || [ ! -x "$GENERATE_APPCAST" ]; then
     exit 1
 fi
 echo "==> Using Sparkle tools at: $(dirname "$GENERATE_APPCAST")"
+
+# --- Pre-flight: create-dmg (builds the drag-to-Applications disk image) ------
+if ! command -v create-dmg >/dev/null 2>&1; then
+    echo "ERROR: create-dmg not found. Install it with: brew install create-dmg" >&2
+    echo "       (it lays out the window background + Applications drop link)." >&2
+    exit 1
+fi
+if [ ! -f "$DMG_BACKGROUND" ]; then
+    echo "ERROR: DMG background missing: $DMG_BACKGROUND" >&2
+    echo "       Regenerate it: swift scripts/dmg-assets/make-background.swift" >&2
+    exit 1
+fi
 
 # --- Pre-flight: guard against a forgotten CFBundleVersion bump ---------------
 # Sparkle compares CFBundleVersion (build number), not the marketing string.
@@ -146,26 +159,35 @@ echo "==> [4/8] Stapling notary ticket to .app"
 xcrun stapler staple "$APP_PATH"
 xcrun stapler validate "$APP_PATH"
 
-echo "==> [5/8] Building and signing $DMG_NAME"
+echo "==> [5/8] Building and signing $DMG_NAME (drag-to-Applications layout)"
 # A DMG preserves the .app byte-for-byte (symlinks inside Sparkle.framework
 # included), so drag-installing it can't break the code-signature seal the way a
-# re-extracted zip can. Stage the stapled app plus an /Applications symlink so
-# the mounted image offers the familiar drag-to-install layout.
+# re-extracted zip can. create-dmg lays out a branded window: the app icon on
+# the left, an Applications drop-link on the right, and a background image with
+# an arrow telling the user to drag one onto the other. It also signs the image.
+#
+# Note: create-dmg drives Finder via AppleScript to set the window background and
+# icon positions, so it needs a logged-in GUI session. The FIRST run may trigger
+# a one-time macOS automation prompt ("Terminal wants to control Finder") — allow
+# it. The --icon / --app-drop-link coordinates must match make-background.swift.
 DIST_DMG="$RELEASES_DIR/$DMG_NAME"
 DMG_STAGE="$BUILD_DIR/dmg-stage"
 rm -rf "$DMG_STAGE"
 mkdir -p "$DMG_STAGE"
-ditto "$APP_PATH" "$DMG_STAGE/$APP_NAME"   # ditto preserves framework symlinks
-ln -s /Applications "$DMG_STAGE/Applications"
-hdiutil create \
-    -volname "$VOL_NAME" \
-    -srcfolder "$DMG_STAGE" \
-    -fs HFS+ \
-    -format UDZO \
-    -ov \
-    "$DIST_DMG"
-# The disk image needs its own Developer ID signature before notarization.
-codesign --force --sign "$SIGN_IDENTITY" --timestamp "$DIST_DMG"
+ditto "$APP_PATH" "$DMG_STAGE/$APP_NAME"   # only the app; create-dmg adds the Applications link
+create-dmg \
+    --volname "$VOL_NAME" \
+    --background "$DMG_BACKGROUND" \
+    --window-pos 200 120 \
+    --window-size 640 400 \
+    --icon-size 110 \
+    --icon "$APP_NAME" 170 200 \
+    --app-drop-link 470 200 \
+    --no-internet-enable \
+    --hdiutil-quiet \
+    --codesign "$SIGN_IDENTITY" \
+    "$DIST_DMG" \
+    "$DMG_STAGE"
 
 echo "==> [6/8] Notarizing + stapling $DMG_NAME"
 xcrun notarytool submit "$DIST_DMG" \
