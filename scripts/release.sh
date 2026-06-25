@@ -94,7 +94,15 @@ xcodebuild -project "$PROJECT" \
     -configuration Release \
     -destination "generic/platform=macOS" \
     -archivePath "$ARCHIVE_PATH" \
+    -allowProvisioningUpdates \
+    CODE_SIGN_STYLE=Automatic \
+    "CODE_SIGN_IDENTITY=Apple Development" \
     archive
+# The project's Release config pins CODE_SIGN_IDENTITY to "Developer ID
+# Application" while keeping CODE_SIGN_STYLE=Automatic, which Xcode rejects as a
+# conflict at archive time. We archive with the Apple Development identity (what
+# automatic signing expects) and let the developer-id export step below re-sign
+# the .app with the Developer ID certificate.
 
 echo "==> [2/7] Exporting Developer ID-signed .app"
 xcodebuild -exportArchive \

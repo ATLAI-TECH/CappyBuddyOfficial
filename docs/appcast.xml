@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>CapyBuddy</title>
+        <item>
+            <title>2.0.1</title>
+            <pubDate>Thu, 25 Jun 2026 09:43:32 +0100</pubDate>
+            <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.1/CapyBuddy-2.0.1.zip" length="5321692" type="application/octet-stream" sparkle:edSignature="hrGAt2tYkbyqEndkws0heeToU4ae4S0TxTYTWaM/B11rAGoAfixsus4VSpiHq+j7N6t8ykUkQxMnsLoI8leCDw=="/>
+        </item>
+    </channel>
+</rss>
