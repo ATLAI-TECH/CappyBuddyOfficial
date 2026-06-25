@@ -209,15 +209,21 @@ echo "==> [7/8] Generating signed $APPCAST_PATH"
     "$RELEASES_DIR"
 
 echo "==> [8/8] Publishing GitHub Release $TAG"
+# A second, version-less copy named CapyBuddy.dmg is also uploaded so the
+# landing page can link to a stable "latest" URL that never changes between
+# releases:
+#   https://github.com/ATLAI-TECH/CapyBuddy/releases/latest/download/CapyBuddy.dmg
+STABLE_DMG="$BUILD_DIR/CapyBuddy.dmg"
+cp -f "$DIST_DMG" "$STABLE_DMG"
 if command -v gh >/dev/null 2>&1; then
     if gh release view "$TAG" >/dev/null 2>&1; then
-        gh release upload "$TAG" "$DIST_DMG" --clobber
+        gh release upload "$TAG" "$DIST_DMG" "$STABLE_DMG" --clobber
     else
-        gh release create "$TAG" "$DIST_DMG" \
+        gh release create "$TAG" "$DIST_DMG" "$STABLE_DMG" \
             --title "CapyBuddy $SHORT_VERSION" \
             --notes "Automated release. See appcast for details."
     fi
-    echo "    Uploaded $DMG_NAME to $RELEASES_URL/tag/$TAG"
+    echo "    Uploaded $DMG_NAME (+ stable CapyBuddy.dmg) to $RELEASES_URL/tag/$TAG"
 else
     echo "    gh CLI not found — upload manually:"
     echo "      1. Create a release tagged '$TAG' at $RELEASES_URL/new"
